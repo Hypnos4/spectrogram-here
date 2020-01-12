@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="net.galmiza.android.ActivityFormulaire">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="238dp"
+        android:layout_height="36dp"
+        android:text="Formulaire d'entrée"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.554"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="68dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="327dp"
+        android:text="Enfant"
+        android:textColor="#000000"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/nom"
+        android:layout_width="55dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="117dp"
+        android:text="Nom :"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/editText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/Prenom"
+        android:layout_width="80dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="92dp"
+        android:text="Prénom :"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/editPrenom"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nom"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/DDN"
+        android:layout_width="158dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="14dp"
+        android:text="Date de naissance :"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/editText2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Prenom"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/Genre"
+        android:layout_width="158dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="54dp"
+        android:text="Genre:"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewPAP"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DDN"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="128dp"
+        android:layout_height="30dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:textSize="18sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="178dp"
+        tools:layout_editor_absoluteY="72dp" />
+
+    <EditText
+        android:id="@+id/editPrenom"
+        android:layout_width="128dp"
+        android:layout_height="29dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:textSize="18sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="178dp"
+        tools:layout_editor_absoluteY="102dp" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="127dp"
+        android:layout_height="24dp"
+        android:ems="10"
+        android:inputType="date"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="178dp"
+        tools:layout_editor_absoluteY="131dp" />
+
+    <CheckBox
+        android:id="@+id/checkBoxMasculin"
+        android:layout_width="104dp"
+        android:layout_height="33dp"
+        android:text="Masculin"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toStartOf="@+id/checkBoxFeminin"
+        app:layout_constraintHorizontal_bias="0.023"
+        app:layout_constraintStart_toEndOf="@+id/Genre"
+        app:layout_constraintTop_toBottomOf="@+id/editText2"
+        tools:ignore="MissingConstraints" />
+
+    <CheckBox
+        android:id="@+id/checkBoxFeminin"
+        android:layout_width="104dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="4dp"
+        android:text="Féminin"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxMasculin"
+        app:layout_constraintTop_toBottomOf="@+id/editText2"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textViewPAP"
+        android:layout_width="226dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="169dp"
+        android:text="Personne à prévenir"
+        android:textColor="#000000"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Genre"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/nomPAP"
+        android:layout_width="55dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="16dp"
+        android:text="Nom :"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPAP"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/PrenomPAP"
+        android:layout_width="80dp"
+        android:layout_height="20dp"
+        android:text="Prénom :"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="483dp"
+        tools:layout_editor_absoluteY="409dp" />
+
+    <TextView
+        android:id="@+id/Adresse"
+        android:layout_width="158dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="20dp"
+        android:text="Adresse:"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="512dp" />
+
+    <TextView
+        android:id="@+id/Code_Postal"
+        android:layout_width="113dp"
+        android:layout_height="27dp"
+        android:text="Code Postal:"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="483dp"
+        tools:layout_editor_absoluteY="445dp" />
+
+    <TextView
+        android:id="@+id/Ville"
+        android:layout_width="158dp"
+        android:layout_height="29dp"
+        android:text="Ville:"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="537dp" />
+
+    <TextView
+        android:id="@+id/Tel"
+        android:layout_width="182dp"
+        android:layout_height="24dp"
+        android:text="Numéro de téléphone :"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="22dp"
+        tools:layout_editor_absoluteY="595dp" />
+
+    <TextView
+        android:id="@+id/Email"
+        android:layout_width="74dp"
+        android:layout_height="25dp"
+        android:text="E-mail:"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="483dp"
+        tools:layout_editor_absoluteY="512dp" />
+
+    <EditText
+        android:id="@+id/editTextNomPAP"
+        android:layout_width="127dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="156dp"
+        android:ems="10"
+        android:inputType="date"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPAP"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="188dp" />
+
+    <EditText
+        android:id="@+id/editTextPrenomPAP"
+        android:layout_width="193dp"
+        android:layout_height="31dp"
+        android:ems="10"
+        android:inputType="date"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="122dp"
+        tools:layout_editor_absoluteY="459dp" />
+
+    <EditText
+        android:id="@+id/editTextAdresse"
+        android:layout_width="193dp"
+        android:layout_height="31dp"
+        android:ems="10"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="213dp"
+        tools:layout_editor_absoluteY="490dp" />
+
+    <EditText
+        android:id="@+id/editText6"
+        android:layout_width="118dp"
+        android:layout_height="36dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        tools:layout_editor_absoluteX="618dp"
+        tools:layout_editor_absoluteY="443dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editTextVille"
+        android:layout_width="193dp"
+        android:layout_height="31dp"
+        android:ems="10"
+        android:inputType="date"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="242dp"
+        tools:layout_editor_absoluteY="543dp" />
+
+    <EditText
+        android:id="@+id/EmailPAP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        tools:layout_editor_absoluteX="617dp"
+        tools:layout_editor_absoluteY="498dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/NumPAP"
+        android:layout_width="194dp"
+        android:layout_height="37dp"
+        android:ems="10"
+        android:inputType="number"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="228dp"
+        tools:layout_editor_absoluteY="595dp" />
+</android.support.constraint.ConstraintLayout>

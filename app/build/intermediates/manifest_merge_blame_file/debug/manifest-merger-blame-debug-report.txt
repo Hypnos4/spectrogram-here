@@ -1,0 +1,66 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="net.galmiza.android.spectrogram"
+4    android:installLocation="auto"
+5    android:versionCode="1"
+6    android:versionName="1.0" >
+7
+8    <uses-sdk
+9        android:minSdkVersion="21"
+9-->C:\Users\rosal\AndroidStudioProjects\spectrogram-android-master\app\src\main\AndroidManifest.xml
+10        android:targetSdkVersion="28" />
+10-->C:\Users\rosal\AndroidStudioProjects\spectrogram-android-master\app\src\main\AndroidManifest.xml
+11
+12    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+12-->C:\Users\rosal\AndroidStudioProjects\spectrogram-android-master\app\src\main\AndroidManifest.xml:6:5-71
+12-->C:\Users\rosal\AndroidStudioProjects\spectrogram-android-master\app\src\main\AndroidManifest.xml:6:22-68
+13
+14    <application
+14-->C:\Users\rosal\AndroidStudioProjects\spectrogram-android-master\app\src\main\AndroidManifest.xml:8:5-27:19
+15        android:allowBackup="true"
+15-->C:\Users\rosal\AndroidStudioProjects\spectrogram-android-master\app\src\main\AndroidManifest.xml:9:9-35
+16        android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
+16-->[com.android.support:support-compat:28.0.0] C:\Users\rosal\.gradle\caches\transforms-2\files-2.1\dd1cf78f22bdd94f550130b281f27c97\support-compat-28.0.0\AndroidManifest.xml:22:18-91
+17        android:debuggable="true"
+18        android:icon="@drawable/ic_launcher"
+18-->C:\Users\rosal\AndroidStudioProjects\spectrogram-android-master\app\src\main\AndroidManifest.xml:10:9-45
+19        android:label="O&apos;tilt"
+19-->C:\Users\rosal\AndroidStudioProjects\spectrogram-android-master\app\src\main\AndroidManifest.xml:11:9-36
+20        android:theme="@style/Theme.AppCompat.Light" >
+20-->C:\Users\rosal\AndroidStudioProjects\spectrogram-android-master\app\src\main\AndroidManifest.xml:12:9-53
+21        <activity android:name="net.galmiza.android.ActivityFormulaire" />
+21-->C:\Users\rosal\AndroidStudioProjects\spectrogram-android-master\app\src\main\AndroidManifest.xml:13:9-84
+21-->C:\Users\rosal\AndroidStudioProjects\spectrogram-android-master\app\src\main\AndroidManifest.xml:13:19-72
+22        <activity android:name="net.galmiza.android.ActivityChoixAjout" />
+22-->C:\Users\rosal\AndroidStudioProjects\spectrogram-android-master\app\src\main\AndroidManifest.xml:14:9-75
+22-->C:\Users\rosal\AndroidStudioProjects\spectrogram-android-master\app\src\main\AndroidManifest.xml:14:19-72
+23        <activity android:name="net.galmiza.android.ActivityDessiner" >
+23-->C:\Users\rosal\AndroidStudioProjects\spectrogram-android-master\app\src\main\AndroidManifest.xml:15:9-16:20
+23-->C:\Users\rosal\AndroidStudioProjects\spectrogram-android-master\app\src\main\AndroidManifest.xml:15:19-70
+24        </activity>
+25        <activity android:name="net.galmiza.android.Main2Activity" />
+25-->C:\Users\rosal\AndroidStudioProjects\spectrogram-android-master\app\src\main\AndroidManifest.xml:17:9-70
+25-->C:\Users\rosal\AndroidStudioProjects\spectrogram-android-master\app\src\main\AndroidManifest.xml:17:19-67
+26        <activity android:name="net.galmiza.android.Activity_Accueil" >
+26-->C:\Users\rosal\AndroidStudioProjects\spectrogram-android-master\app\src\main\AndroidManifest.xml:18:9-20:20
+26-->C:\Users\rosal\AndroidStudioProjects\spectrogram-android-master\app\src\main\AndroidManifest.xml:18:19-70
+27        </activity>
+28        <activity android:name="net.galmiza.android.ActivityConnexion" />
+28-->C:\Users\rosal\AndroidStudioProjects\spectrogram-android-master\app\src\main\AndroidManifest.xml:21:9-74
+28-->C:\Users\rosal\AndroidStudioProjects\spectrogram-android-master\app\src\main\AndroidManifest.xml:21:19-71
+29        <activity android:name="net.galmiza.android.ActivityVoyelles" />
+29-->C:\Users\rosal\AndroidStudioProjects\spectrogram-android-master\app\src\main\AndroidManifest.xml:22:9-73
+29-->C:\Users\rosal\AndroidStudioProjects\spectrogram-android-master\app\src\main\AndroidManifest.xml:22:19-70
+30        <activity android:name="net.galmiza.android.Main3Activity" />
+30-->C:\Users\rosal\AndroidStudioProjects\spectrogram-android-master\app\src\main\AndroidManifest.xml:23:9-70
+30-->C:\Users\rosal\AndroidStudioProjects\spectrogram-android-master\app\src\main\AndroidManifest.xml:23:19-67
+31        <activity android:name="net.galmiza.android.spectrogram.SpectrogramActivity" >
+31-->C:\Users\rosal\AndroidStudioProjects\spectrogram-android-master\app\src\main\AndroidManifest.xml:24:9-25:20
+31-->C:\Users\rosal\AndroidStudioProjects\spectrogram-android-master\app\src\main\AndroidManifest.xml:24:19-85
+32        </activity>
+33        <activity android:name="net.galmiza.android.spectrogram.PreferencesActivity" />
+33-->C:\Users\rosal\AndroidStudioProjects\spectrogram-android-master\app\src\main\AndroidManifest.xml:26:9-88
+33-->C:\Users\rosal\AndroidStudioProjects\spectrogram-android-master\app\src\main\AndroidManifest.xml:26:19-85
+34    </application>
+35
+36</manifest>
